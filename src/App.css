@@ -1,38 +1,60 @@
-.App {
+body {
+  font-family: 'Press Start 2P', cursive; /* Ретро-шрифт, завантаж через Google Fonts */
+  background: linear-gradient(135deg, #2a2a2a, #4a4a4a);
+  color: #fff;
   text-align: center;
+  margin: 0;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.toolbar {
+  margin-bottom: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 10px;
+  align-items: center;
+}
+
+button {
+  padding: 10px 20px;
+  background: #ff4444;
   color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background: #cc3333;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  font-size: 24px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+canvas {
+  background: #fff;
+  image-rendering: pixelated; /* Для чітких пікселів */
+}
+
+.palette {
+  display: flex;
+  gap: 5px;
+}
+
+.palette button {
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.palette button:hover {
+  border-color: #fff;
 }
