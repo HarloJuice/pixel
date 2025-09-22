@@ -1,5 +1,5 @@
 body {
-  font-family: 'Press Start 2P', cursive; /* Ретро-шрифт, завантаж через Google Fonts */
+  font-family: 'Press Start 2P', cursive;
   background: linear-gradient(135deg, #2a2a2a, #4a4a4a);
   color: #fff;
   text-align: center;
@@ -15,39 +15,25 @@ body {
 .toolbar {
   margin-bottom: 20px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  background: #333;
+  padding: 15px;
+  border-radius: 8px;
+  border: 2px solid #666;
+}
+
+.toolbar-row {
+  display: flex;
   gap: 10px;
   align-items: center;
-}
-
-button {
-  padding: 10px 20px;
-  background: #ff4444;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-family: inherit;
-  font-size: 14px;
-}
-
-button:hover {
-  background: #cc3333;
-}
-
-h1 {
-  font-size: 24px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-canvas {
-  background: #fff;
-  image-rendering: pixelated; /* Для чітких пікселів */
+  justify-content: center;
 }
 
 .palette {
   display: flex;
   gap: 5px;
+  flex-wrap: wrap;
 }
 
 .palette button {
@@ -57,4 +43,78 @@ canvas {
 
 .palette button:hover {
   border-color: #fff;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  padding: 8px 16px;
+  background: #ff4444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 12px;
+}
+
+button:hover {
+  background: #cc3333;
+}
+
+button:disabled {
+  background: #666;
+  cursor: not-allowed;
+}
+
+button.export-button {
+  background: #44ff44;
+}
+
+button.export-button:hover {
+  background: #33cc33;
+}
+
+.filename-input {
+  padding: 8px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  background: #fff;
+  color: #333;
+  width: 120px;
+}
+
+.filename-input::placeholder {
+  color: #666;
+}
+
+.grid-size-select {
+  padding: 8px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+  border: 2px solid #333;
+  border-radius: 4px;
+  background: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
+.grid-size-select:focus {
+  outline: none;
+  border-color: #fff;
+}
+
+canvas {
+  background: #fff;
+  image-rendering: pixelated;
+}
+
+h1 {
+  font-size: 24px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
