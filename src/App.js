@@ -309,8 +309,13 @@ const App = () => {
         style={{ border: '2px solid #333', cursor: 'crosshair' }}
       />
       <p>Ліва кнопка — малювати, права — стирати, Shift + клік — заливка, Ctrl+Z/Y — undo/redo, вибери пензель, розмір сітки і експортуй PNG!</p>
+      <p>test for commit</p>
     </div>
+
+    
   );
 };
 
 export default App;
+
+//for commit
