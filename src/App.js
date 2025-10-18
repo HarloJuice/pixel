@@ -244,7 +244,7 @@ const App = () => {
 
   return (
     <div className="app">
-      <h1>Чувак, малюй свій піксель-арт! 😎</h1>
+      <h1>Малюй свій піксель-арт! 😎</h1>
       <div className="toolbar">
         <div className="toolbar-row">
           <div className="palette">
